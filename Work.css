@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+    text-align: center;
+    height: 280vh;
+}
+
+.navbar {
+    /* background-color: white;
+  opacity: 10%; */
+    width: 100%;
+    color: black;
+    /* postion elements using flexbox */
+    display: flex;
+    justify-content: left;
+    height: 3rem;
+    padding: 10px;
+    position: fixed;
+    backdrop-filter: blur(3px);
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-item {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #cab9f6;
+}
+
+.logo {
+    height: 80%;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+/* ***************** start of introduction section ***************** */
+
+.dev-intro {
+    height: 100vh;
+    background-position: top;
+    display: block;
+    background-image: linear-gradient(#354f52 10%, #52796f 20%, #84a98c 60%, #ffe6a7 100%);
+    animation: bg-animation-dev 5s infinite alternate;
+    background-size: 300% 300%;
+}
+
+.iter-intro {
+    height: 100vh;
+    background-position: top;
+    display: block;
+    background-image: linear-gradient(#e3ffe7 30%, #d9e7ff 40%, #b1ccfb 60%);
+    animation: bg-animation-dev 5s infinite alternate;
+    background-size: 300% 300%;
+}
+
+.resp-intro {
+    height: 100vh;
+    background-position: top;
+    display: block;
+    background-image: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
+    animation: bg-animation 5s infinite alternate;
+    background-size: 300% 300%;
+}
+
+.persona-intro {
+    height: 100vh;
+    background-position: top;
+    display: block;
+    background-image: linear-gradient(132deg, #FAACA8 0%, #FAACA8 100%);
+    animation: bg-animation 5s infinite alternate;
+    background-size: 300% 300%;
+}
+
+/*animation that moves the gradient background image*/
+@keyframes bg-animation {
+    0% {
+        background-position: left
+    }
+
+    100% {
+        background-position: right
+    }
+}
+
+@keyframes bg-animation-dev {
+    0% {
+        background-position: top;
+    }
+
+    100% {
+        background-position: bottom;
+    }
+}
+
+
+.intro-text-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.image-padding {
+    height: 150px;
+}
+
+.intro-text {
+    background-color: #eff0f3;
+    border-radius: 15px;
+    width: 600px;
+    text-align: center;
+    box-shadow: 3px 8px 23px 0px rgba(0, 0, 0, 0.49);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.intro-h1 {
+    font-weight: 500;
+}
+
+.intro-h3 {
+    font-weight: 300;
+}
+
+.intro-image {
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 3px 8px 23px 0px rgba(0, 0, 0, 0.49);
+}
+
+/* ***************** start of work section ***************** */
+.work-section {
+    display: flex;
+    justify-content: center;
+}
+
+.work-container {
+    width: 70%;
+}
+
+.sub-section {
+    text-align: left;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.work-section-title {
+    font-weight: 500;
+}
+
+.list-outer {
+    list-style: decimal;
+}
+
+.list-inner {
+    list-style: lower-alpha;
+}
+
+.list-indent {
+    list-style: none;
+}
+
+.p-bold {
+    font-weight: bold;
+}
+
+/* personas */
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.persona-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.persona-image {
+    width: 470px;
+    border-radius: 10px;
+    box-shadow: 3px 8px 23px 0px rgba(0, 0, 0, 0.49);
+}
+
+.storyboard-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px 10px;
+}
+
+.panel-image {
+    width: 480px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 15px 0px rgba(0, 0, 0, 0.49);
+}
+
+.microwave-image {
+    border-radius: 10px;
+    box-shadow: 3px 5px 15px 0px rgba(0, 0, 0, 0.49);
+}
+
+/* iterative design */
+.wireframe {
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 15px 0px rgba(0, 0, 0, 0.49);
+}
+
+.image-full-width {
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.image-full-width:hover {
+    box-shadow: 3px 5px 15px 0px rgba(0, 0, 0, 0.49);
+}
+
+.image-full-width-no-shadow {
+    width: 100%;
+    background-color: #eff0f3;
+    border-radius: 15px;
+}
